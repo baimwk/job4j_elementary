@@ -1,6 +1,5 @@
 package ru.job4j.condition;
 
-
 public class Point {
     public static double distance(int x1, int y1, int x2, int y2) {
         int minusX = x2 - x1;
@@ -8,8 +7,7 @@ public class Point {
         double powX = Math.pow(minusX, 2);
         double powY = Math.pow(minusY, 2);
         double powXPlusPowY = powX + powY;
-        double rsl = Math.sqrt(powXPlusPowY);
-        return rsl;
+        return Math.sqrt(powXPlusPowY);
     }
 
     public static void main(String[] args) {
